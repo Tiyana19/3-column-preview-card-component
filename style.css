@@ -1,0 +1,100 @@
+/* *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+} */
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+    display: flex;
+    width: auto;
+    color: hsl(0, 0%, 95%);
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sedans, #suvs, #luxury {
+    font-weight: 400;
+    font-family: 'Lexend Deca', sans-serif;
+}
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem;
+
+}
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 2rem;
+}
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 2rem;
+}
+.section-icon {
+    padding: 1rem;
+    padding-left: 0;
+}
+.head {
+    text-transform: uppercase;
+    padding: 1rem;
+    padding-left: 0;
+    display: block;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+.para {
+    display: block;
+    padding: 1rem;
+    padding-left: 0;
+    font-size: 0.7rem;
+    line-height: 1.7;
+}
+
+                    /* BUTTON STYLESHEET */
+.btn {
+    padding: 1rem 1.2rem;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    width: 10rem;
+    margin: 2rem;
+    margin-left: 0;
+    text-decoration: none;
+    text-align: center;
+}
+#sedans .btn a{
+    color: hsl(31, 77%, 52%);
+    text-decoration: none;
+}
+#suvs .btn a{
+    color: hsl(184, 100%, 22%);
+    text-decoration: none;
+}
+#luxury .btn a {
+    color: hsl(179, 100%, 13%);
+    text-decoration: none;
+}
+
+                /* MEDIA QUERY */
+
+@media (max-width: 800px) {
+    .card {
+        
+        flex-direction: column;
+    }
+}
+
+.footer {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+}
