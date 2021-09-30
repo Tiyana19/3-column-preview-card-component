@@ -1,11 +1,11 @@
-/* *, *::after, *::before {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 html {
     box-sizing: border-box;
-} */
+}
 body {
     background-color: hsl(0, 0%, 95%);
 }
@@ -58,6 +58,22 @@ body {
 }
 
                     /* BUTTON STYLESHEET */
+
+.sedans-btn:hover {
+    border: 2px #fff solid;
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+}  
+.suvs-btn:hover {
+    border: 2px #fff solid;
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}          
+.luxury-btn {
+    border: 2px #fff solid;
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+} 
 .btn {
     padding: 1rem 1.2rem;
     background-color: hsl(0, 0%, 95%);
@@ -83,14 +99,19 @@ body {
 
                 /* MEDIA QUERY */
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
     .card {
-        
+        height: 100%;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
         flex-direction: column;
     }
 }
 
+                /* FOOTER STYLESHEET */
+
 .footer {
+    margin: 3rem;
     position: absolute;
     top: 98%;
     left: 50%;
@@ -98,3 +119,7 @@ body {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.8rem;
 }
+
+                    
+
+
