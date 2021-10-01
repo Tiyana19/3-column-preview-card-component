@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: (https://www.frontendmentor.io/solutions/3-column-preview-card-component-Hgp3rCXn1)
+- Live Site URL: (https://tiyana19.github.io/3-column-preview-card-component/)
 
 ### Built with
 
