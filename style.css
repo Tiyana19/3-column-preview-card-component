@@ -9,16 +9,22 @@ html {
 body {
     background-color: hsl(0, 0%, 95%);
 }
-
+.box-card {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
 .card {
     display: flex;
+    grid-column: 2/3;
+    grid-row: 2;
     width: auto;
     color: hsl(0, 0%, 95%);
     height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 #sedans, #suvs, #luxury {
     font-weight: 400;
@@ -27,11 +33,13 @@ body {
 #sedans {
     background-color: hsl(31, 77%, 52%);
     padding: 2rem;
+ 
 
 }
 #suvs {
     background-color: hsl(184, 100%, 22%);
     padding: 2rem;
+   
 }
 #luxury {
     background-color: hsl(179, 100%, 13%);
@@ -60,39 +68,42 @@ body {
                     /* BUTTON STYLESHEET */
 
 .sedans-btn:hover {
-    border: 2px #fff solid;
-    color: #fff;
+    /* color: #fff; */
     background-color: hsl(31, 77%, 52%);
+    border: 2px #fff solid;
+    -webkit-text-fill-color: #fff;
+    
 }  
 .suvs-btn:hover {
     border: 2px #fff solid;
-    color: #fff;
     background-color: hsl(184, 100%, 22%);
+    -webkit-text-fill-color: #fff;
 }          
 .luxury-btn:hover {
     border: 2px #fff solid;
-    color: #fff;
     background-color: hsl(179, 100%, 13%);
+    -webkit-text-fill-color: #fff;
 } 
 .btn {
+    display: inline-block;
     padding: 1rem 1.2rem;
     background-color: hsl(0, 0%, 95%);
     border-radius: 30px;
-    width: 10rem;
+    width: 9rem;
     margin: 2rem;
     margin-left: 0;
     text-decoration: none;
     text-align: center;
 }
-#sedans .btn a{
+#sedans .btn{
     color: hsl(31, 77%, 52%);
     text-decoration: none;
 }
-#suvs .btn a{
+#suvs .btn{
     color: hsl(184, 100%, 22%);
     text-decoration: none;
 }
-#luxury .btn a {
+#luxury .btn{
     color: hsl(179, 100%, 13%);
     text-decoration: none;
 }
@@ -100,24 +111,28 @@ body {
                 /* MEDIA QUERY */
 
 @media (max-width: 700px) {
+    .box-card {
+        padding: 2rem;
+    }
     .card {
         height: 100%;
-        margin-top: 5rem;
-        margin-bottom: 3rem;
+        margin: 3rem;
         flex-direction: column;
     }
-    
 }
 
                 /* FOOTER STYLESHEET */
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-column: 1 / -1;
+    grid-row: 3/ 4;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.8rem;
+    margin-top: auto;
+    text-align: center;
+}
+.footer a {
+    color: hsl(228, 45%, 44%);
 }
 
                     
