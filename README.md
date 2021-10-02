@@ -37,6 +37,9 @@ Users should be able to:
 ### What I learned
 
 I learned more about CSS grid. I also got to know plus points of auto value to width and height.
+Thank you so much @CyrusKabir for telling me my mistakes.
+I stoped hover from increasing card's height over hover by giving a default border to buttton with transparent color.
+also because of CSS Specificity color property over hover works fine.
 
 ### Continued development
 
